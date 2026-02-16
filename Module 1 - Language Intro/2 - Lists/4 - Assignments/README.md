@@ -14,7 +14,7 @@ then be calculated as (5+9)/2 = 7.
 
 Store the final average of those middle elements in a variable called "middle_average".
 
-Note: the `[]` can be fussy when there is a calculation for the list index inside the `[]`. For example my_list[some_num/2], 
+Note: the `[]` can be fussy when there is a calculation for the list index in side the `[]`. For example my_list[some_num/2], 
 may result in a floating point value that will cause a runtime error. It is suggested that any indices used be calculated
 outside of the `[]` operator, and then cast into an integer via `int()`  or ensure the result is an integer, before being used. For example the two lines below may result in an error:
 

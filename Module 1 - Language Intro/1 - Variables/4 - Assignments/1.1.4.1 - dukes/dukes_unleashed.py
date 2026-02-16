@@ -13,7 +13,13 @@ Note: this problem does not require the "compounding interest" formula from the 
 """
 
 ### Your code here ###
+# tuition costs are from the 2023-2024 school year
+in_state_cost = 30792 # cost of in state tuition
+out_state_cost = 47882 # cost of out of state tuition
+r = .05 # alumni investment return in decimal form
 
-in_state_gift = 0
+in_state_gift = in_state_cost/r # Formula to find the gift needed to pay for in state tuition
+out_state_gift = out_state_cost/r # Formula to find the gift needed to pay for out of state tuition
 
-out_state_gift = 0
+print(f"The donation needed for the in state student is ${in_state_gift}")
+print(f"The donation needed for the out of state student is ${out_state_gift}")

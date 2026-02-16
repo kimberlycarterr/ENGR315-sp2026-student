@@ -13,10 +13,16 @@ Note that Elon's capital will be $33B.
 """
 
 ### all your code below ###
-
+r10 = 3.96 # interest rate for 10 years in %
+r20 = 4.32 # interest rate for 20 years in %
+P = 33000000000 # Principal Investment in $
+n10 = 10 # times compounded for 10 years
+n20 = 20 # times compounded for 20 years
 
 # final answer for 10-year
-ten_year_final = None
+ten_year_final = P * (1+(r10/100)) ** n10
+print(f"The final amount after 10 years is ${ten_year_final}")
 
 # final answer for 20-year
-twenty_year_final = None
+twenty_year_final = P * (1+(r20/100)) ** n20
+print(f"The final amount after 20 years is ${twenty_year_final}")
