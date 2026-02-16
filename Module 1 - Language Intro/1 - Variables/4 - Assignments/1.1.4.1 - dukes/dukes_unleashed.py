@@ -22,4 +22,8 @@ in_state_gift = in_state_cost/r # Formula to find the gift needed to pay for in 
 out_state_gift = out_state_cost/r # Formula to find the gift needed to pay for out of state tuition
 
 print(f"The donation needed for the in state student is ${in_state_gift}")
+<<<<<<< Updated upstream
 print(f"The donation needed for the out of state student is ${out_state_gift}")
+=======
+print(f"The donation needed for the in state student is ${out_state_gift}")
+>>>>>>> Stashed changes
