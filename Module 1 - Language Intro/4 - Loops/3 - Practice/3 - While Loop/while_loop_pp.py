@@ -2,7 +2,7 @@
 # use the print() statement to determine whether your number is correct
 
 # an example while loop is given below
-a = 1
+a = 0
 while a != 5:
     a = a + 1  # pay attention where the counter (this part of the loop) is located
     print("not 5 yet, but we're at " + str(a))
@@ -24,9 +24,14 @@ while x != 0:
 c = 3
 y = 0
 while y < 5:
-    break
+    c = c + c
+    y = y + 1
+    print("not 5 yet, but we're at " + str(y))
 
 # it's time to combine both of these concepts.
 # write a loop entirely from scratch that prints out a statement 6 times
 # the counter variable you will use is z
 z = 0
+while z < 6:
+    print("not 6 yet, but we're at " + str(z))
+    z = z + 1

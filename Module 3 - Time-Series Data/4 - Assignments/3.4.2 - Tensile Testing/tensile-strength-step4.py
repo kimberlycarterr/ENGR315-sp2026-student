@@ -61,8 +61,15 @@ def calculate_stress(force, sample_diameter):
     """
 
     ### YOUR SOLUTION FROM STEP 1 TEMPLATE HERE ###
+    area = math.pi * (sample_diameter / 2) ** 2
+   # calculate stress (MPa) from load (kN) and cross-sectional area
+    ### your code here ###
 
-    return None
+    # delete this line and replace it with your own
+    stress = (force/area) * 1000
+
+    return stress
+
 
 
 def calculate_max_strength_strain(strain, stress):
@@ -77,7 +84,13 @@ def calculate_max_strength_strain(strain, stress):
 
     ### YOUR SOLUTION FROM STEP 2 TEMPLATE HERE ###
 
-    return -1, -1
+     # calculate the maximum stress experienced
+    ultimate_tensile_stress = np.max(stress)
+
+    # calculate the maximum strain experienced
+    fracture_strain = np.max(strain)
+
+    return ultimate_tensile_stress, fracture_strain
 
 def calculate_elastic_modulus(strain, stress):
     """
@@ -97,6 +110,20 @@ def calculate_elastic_modulus(strain, stress):
     intercept = None
 
     ### YOUR SOLUTION FROM STEP 3 TEMPLATE HERE ###
+# Step 3a
+    peak_stress = np.max(stress)
+    secant_stress = 0.4 * peak_stress
+
+# Step 3b
+    diffs = np.abs(stress - secant_stress)
+    linear_index = np.argmin(diffs)
+
+# Step 3c
+    linear_stress = stress[0:linear_index]
+    linear_strain = strain[0:linear_index]
+
+# Step 3d:
+    slope, intercept = np.polyfit(linear_strain, linear_stress, 1)
 
     return linear_index, slope, intercept
 

@@ -29,3 +29,11 @@ num_evens = 0
 num_odds = 0
 
 ### YOUR CODE BEGINS HERE ###
+print(nums)
+print(len(nums))
+
+for i in range(len(nums)):
+    if nums[i]%2 == 0:
+        num_evens += 1
+    else: num_odds += 1
+print(f"The number of evens is {num_evens} and the number of odds is {num_odds}")
