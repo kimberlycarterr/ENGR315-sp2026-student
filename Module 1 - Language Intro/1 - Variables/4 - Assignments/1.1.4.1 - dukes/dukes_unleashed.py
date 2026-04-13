@@ -20,6 +20,7 @@ r = .05 # alumni investment return in decimal form
 
 in_state_gift = in_state_cost/r # Formula to find the gift needed to pay for in state tuition
 out_state_gift = out_state_cost/r # Formula to find the gift needed to pay for out of state tuition
+<<<<<<< Updated upstream
 
 print(f"The donation needed for the in state student is ${in_state_gift}")
 
@@ -30,3 +31,8 @@ print(f"The donation needed for the in state student is ${out_state_gift}")
 
 print(f"The donation needed for the in state student is ${out_state_gift}")
 
+=======
+
+print(f"The donation needed for the in state student is ${in_state_gift}")
+print(f"The donation needed for the in state student is ${out_state_gift}")
+>>>>>>> Stashed changes
